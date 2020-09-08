@@ -40,6 +40,7 @@ public static long factorial(int x) {
 > The Fibonacci series is a series of numbers in which each term is the sum of the two preceding terms. It's first two terms are 0 and 1.
 #### Example
 > The first 11 terms of the series are 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, and 55.
+
 `S(n) = S(n-1) + S(n-2), with S(0) = 0 and S(1) = 1`
 
 #### Recursion
