@@ -6,13 +6,23 @@
 
 ## Table of content
 * [Factorial](#factorial)
-  * Recursive
 
 ## Algorithms
 
 ### Factorial
 > The factorial function (symbol: !) says to multiply all whole numbers from our chosen number down to 1.
-#### Recursive
+
+#### Basic
+```java
+public static long factorialBasic(int x) {
+    long fact = 1;
+    for (int i = 2; i <= x; i++) {
+        fact = fact * i;
+    }
+    return fact;
+}
+```
+#### Recursion
 ```java
 public static long factorial(int x) {
     if (x == 0) {
