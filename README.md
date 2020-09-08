@@ -5,7 +5,7 @@
 > Awesome list of algorithms that help you to solve your code issues or can help you in interviews if you are looking for a new job.
 
 ## Table of content
-1. Factorial
+* [Factorial](#factorial)
   * Recursive
 
 ## Algorithms
