@@ -6,12 +6,13 @@
 
 ## Table of content
 * [Factorial](#factorial)
+* [Fibonacci](#fibonacci)
 
 ## Algorithms
 
 ### Factorial
 > The factorial function (symbol: !) says to multiply all whole numbers from our chosen number down to 1.
-##### Example
+#### Example
 `5! = 5 * 4 * 3 * 2 * 1 = 120`
 
 #### Basic
@@ -30,7 +31,24 @@ public static long factorial(int x) {
     if (x == 0) {
         return 1;
     } else {
-        return x * factorialRecursive(x - 1);
+        return x * factorial(x - 1);
+    }
+}
+```
+
+### Fibonacci
+> The Fibonacci series is a series of numbers in which each term is the sum of the two preceding terms. It's first two terms are 0 and 1.
+#### Example
+> The first 11 terms of the series are 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, and 55.
+`S(n) = S(n-1) + S(n-2), with S(0) = 0 and S(1) = 1`
+
+#### Recursion
+```java
+public static long fibonacci(int x) {
+    if (x < 2) {
+        return x;
+    } else {
+        return fibonacci(x-1) + fibonacci(x-2);
     }
 }
 ```
