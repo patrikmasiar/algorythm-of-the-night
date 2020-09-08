@@ -1,4 +1,4 @@
-package com.company; 
+package com.company;
 
 import java.util.Scanner;
 
@@ -26,6 +26,6 @@ public class Main {
         int a = input.nextInt();
 
         System.out.println("Basic factorial of number "+a+" is "+factorialBasic(a));
-	    System.out.println("Recursion Factorial of number "+a+" is "+factorialRecursive(a));
+	   	System.out.println("Recursion Factorial of number "+a+" is "+factorialRecursive(a));
     }
 }
