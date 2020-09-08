@@ -14,7 +14,7 @@
 
 #### Basic
 ```java
-public static long factorialBasic(int x) {
+public static long factorial(int x) {
     long fact = 1;
     for (int i = 2; i <= x; i++) {
         fact = fact * i;
