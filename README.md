@@ -11,6 +11,8 @@
 
 ### Factorial
 > The factorial function (symbol: !) says to multiply all whole numbers from our chosen number down to 1.
+##### Example
+`5! = 5 * 4 * 3 * 2 * 1 = 120`
 
 #### Basic
 ```java
