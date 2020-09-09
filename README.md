@@ -7,6 +7,7 @@
 ## Table of content
 * [Factorial](#factorial)
 * [Fibonacci](#fibonacci)
+* [Includes](#includes)
 
 ## Algorithms
 
@@ -50,6 +51,25 @@ public static long fibonacci(int x) {
         return x;
     } else {
         return fibonacci(x-1) + fibonacci(x-2);
+    }
+}
+```
+
+### Includes
+> Check if array of length *n* includes number *x*
+> *left* and *right* are field boundaries
+
+#### Recursion
+```java
+public static void includes(int [] array, int x, int left, int right) {
+    if (left > right) {
+        System.out.println("Not Includes");
+    }
+
+    if (array[left] == x) {
+        System.out.println("Includes");
+    } else {
+        includes(array, x, left+1, right);
     }
 }
 ```
