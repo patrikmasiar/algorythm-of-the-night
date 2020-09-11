@@ -81,6 +81,10 @@ public static void includes(int [] array, int x, int left, int right) {
 
 > Given an array of positive and negative numbers, find if there is a subarray (of size at-least one) with 0 sum.
 
+#### Example
+Example with reading numbers from file and write returned values to output file:
+[NodeJS example with file reading from file and writing results to output file](https://github.com/massoprod/zero-sum-subsequence-nodejs)
+
 #### Solution
 ```java
 public static boolean isZeroSumSubsequenceInArray(int array[]) {
