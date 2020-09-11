@@ -8,7 +8,7 @@
 * [Factorial](#factorial)
 * [Fibonacci](#fibonacci)
 * [Includes](#includes)
-* [Zero sum subsequence](#)
+* [Zero sum subsequence](#zero-sum-subsequence)
 
 ## Algorithms
 
