@@ -8,6 +8,7 @@
 * [Factorial](#factorial)
 * [Fibonacci](#fibonacci)
 * [Includes](#includes)
+* [Zero sum subsequence](#)
 
 ## Algorithms
 
@@ -72,5 +73,29 @@ public static void includes(int [] array, int x, int left, int right) {
     } else {
         includes(array, x, left+1, right);
     }
+}
+```
+
+### Zero sum subsequence
+> If we have sequence of numbers 2 8 -9 1, there is a zero sum subsequence because it contains 8 -9 1, whose sum is 8 -9 + 1 = 0. If sequence were 1 2 -9 8, results should be falsy because numbers whose sum is zero are not next to each other.
+
+> Given an array of positive and negative numbers, find if there is a subarray (of size at-least one) with 0 sum.
+
+#### Solution
+```java
+public static boolean isZeroSumSubsequenceInArray(int array[]) {
+    int sum = 0;
+    Set<Integer> hs = new HashSet<Integer>();
+
+    for (int i = 0; i < array.length; i++) {
+        sum += array[i];
+        if (sum == 0 || hs.contains(sum) || array[i] == 0) {
+            return true;
+        }
+
+        hs.add(sum);
+    }
+
+    return false;
 }
 ```
