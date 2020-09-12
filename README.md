@@ -9,6 +9,7 @@
 * [Fibonacci](#fibonacci)
 * [Includes](#includes)
 * [Zero sum subsequence](#zero-sum-subsequence)
+* [Greatest common divisor](#greatest-common-divisor)
 
 ## Algorithms
 
@@ -101,5 +102,19 @@ public static boolean isZeroSumSubsequenceInArray(int array[]) {
     }
 
     return false;
+}
+```
+
+### Greatest common divisor
+> The greatest common divisor (GCD) of two or more integers, which are not all zero, is the largest positive integer that divides each of the integers. For two integers *x*, *y*, the greatest common divisor of x and y is denoted *GCD(x,y)*.
+
+#### Recursion
+```java
+public static int getGCD(int a, int b) {
+    if (b == 0) {
+        return a;
+    } else {
+        return getGCD(b, a % b);
+    }
 }
 ```
