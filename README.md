@@ -10,6 +10,7 @@
 * [Includes](#includes)
 * [Zero sum subsequence](#zero-sum-subsequence)
 * [Greatest common divisor](#greatest-common-divisor)
+* [Palindrome](#Palindrome)
 
 ## Algorithms
 
@@ -116,5 +117,31 @@ public static int getGCD(int a, int b) {
     } else {
         return getGCD(b, a % b);
     }
+}
+```
+
+### Palindrome
+> A palindrome is a word, phrase, number or sequence of words that reads the same backward as forward. Punctuation and spaces between the words or lettering is allowed.
+
+#### Example
+***Is not palindrome:*** *hello, world, 123,...*
+***Is palindrome:*** *lol, madam, abba, 1221,...*
+
+#### Solutions
+```java
+public static boolean isPalindrome(String text) {
+    int i = 0;
+    int j = text.length() - 1;
+
+    while (i < j) {
+        if (text.charAt(i) != text.charAt(j)) {
+            return false;
+        }
+
+        i++;
+        j--;
+    }
+
+    return true;
 }
 ```
