@@ -1,4 +1,6 @@
-![Algorythm of the night](https://github.com/massoprod/algorythm-of-the-night/blob/master/logo.png?raw=true)
+<p align="center">
+  <imgsrc="https://github.com/massoprod/algorythm-of-the-night/blob/master/logo.png?raw=true">
+</p>
 
 # List of algorithms [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
