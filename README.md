@@ -125,6 +125,7 @@ public static int getGCD(int a, int b) {
 
 #### Example
 ***Is not palindrome:*** *hello, world, 123,...*
+
 ***Is palindrome:*** *lol, madam, abba, 1221,...*
 
 #### Solutions
