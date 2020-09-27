@@ -13,6 +13,8 @@
 * [Zero sum subsequence](#zero-sum-subsequence)
 * [Greatest common divisor](#greatest-common-divisor)
 * [Palindrome](#Palindrome)
+* [Quadratic equation](#quadratic-equation)
+* [Sort](#sort)
 
 ## Algorithms
 
@@ -180,5 +182,27 @@ public static void getQuadraticEquationRoots(double a, double b, double c) {
 
         System.out.format("X1 = %.2f+%.2fi\nX2 = %.2f-%.2fi", realPart, imaginaryPart, realPart, imaginaryPart);
     }
+}
+```
+
+### Sort
+
+### Insertion sort
+> Algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
+
+#### Solutions
+```java
+public static int[] insertSort(int array[]) {
+    for(int i = 1; i < array.length; i++) {
+        int j = i;
+        int temp = array[j];
+        while(j > 0 && array[j - 1] > temp) {
+            array[j] = array[j - 1];
+            j--;
+        }
+        array[j] = temp;
+    }
+
+    return array;
 }
 ```
