@@ -150,19 +150,13 @@ public static boolean isPalindrome(String text) {
 ```
 
 ### Quadratic equation
-> A quadratic equation is an equation that could be written as: `ax^2 + bx + c = 0`
+> A quadratic equation is an equation that could be written as: `ax^2 + bx + c = 0`. The solution(s) to a quadratic equation can be calculated using the Quadratic Formula: `x = (-b +- sqrt(b^2-4ac)) / 2a`. The *±* means we need to do a plus an a minus, so there are normally two solutions. Discriminant: `D = b2 - 4ac` -> it can "discriminate" between the possible types of answer.
 
-> The solution(s) to a quadratic equation can be calculated using the Quadratic Formula: `x = (-b +- sqrt(b^2-4ac)) / 2a`
+***D is positive***, we get two real solutions
 
-> The *±* means we need to do a plus an a minus, so there are normally two solutions
+***D is zero***, we get just one solution
 
-> Discriminant: `D = b2 - 4ac` -> it can "discriminate" between the possible types of answer
-
-> D is positive, we get two real solutions
-
-> D is zero we get just one solution
-
-> D is negative we get complex solutions
+***D is negative***, we get complex solutions
 
 #### Solutions
 ```java
