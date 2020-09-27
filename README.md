@@ -148,3 +148,43 @@ public static boolean isPalindrome(String text) {
     return true;
 }
 ```
+
+### Quadratic equation
+> A quadratic equation is an equation that could be written as: `ax^2 + bx + c = 0`
+
+> The solution(s) to a quadratic equation can be calculated using the Quadratic Formula: `x = (-b +- sqrt(b^2-4ac)) / 2a`
+
+> The *±* means we need to do a plus an a minus, so there are normally two solutions
+
+> Discriminant: `D = b2 - 4ac` -> it can "discriminate" between the possible types of answer
+
+> D is positive, we get two real solutions
+
+> D is zero we get just one solution
+
+> D is negative we get complex solutions
+
+#### Solutions
+```java
+public static void getQuadraticEquationRoots(double a, double b, double c) {
+    double x1, x2;
+    double d =  (b * b) - (4 * a * c);
+
+    if (d > 0) {
+        x1 = (-b + Math.sqrt(d)) / (2 * a);
+        x2 = (-b - Math.sqrt(d)) / (2 * a);
+
+        System.out.println("X1: " + x1);
+        System.out.println("X2: " + x2);
+    } else if (d == 0) {
+        double root = -b / (2 * a);
+
+        System.out.println("X1,2: " + root);
+    } else {
+        double realPart = -b / (2 *a);
+        double imaginaryPart = Math.sqrt(-d) / (2 * a);
+
+        System.out.format("X1 = %.2f+%.2fi\nX2 = %.2f-%.2fi", realPart, imaginaryPart, realPart, imaginaryPart);
+    }
+}
+```
